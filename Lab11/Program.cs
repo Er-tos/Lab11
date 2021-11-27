@@ -12,12 +12,12 @@ namespace Lab11
         {
             Console.WriteLine("Разработаем структуру для решения линейного уравнения 0 = kx + b.");
             linearEquation linearEquation;
-            Console.WriteLine("Введите коэффициент уравнения k");
+            Console.Write("Введите коэффициент уравнения k: ");
             linearEquation.k = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Введите коэффициент уравнения b");
+            Console.Write("Введите коэффициент уравнения b: ");
             linearEquation.b = Convert.ToDouble(Console.ReadLine());
             double decision = linearEquation.Root();
-            Console.WriteLine("Решение уравнения: x = {0}", decision);
+            Console.Write("Решение уравнения: x = {0}", decision);
             Console.ReadKey();
         }
         struct linearEquation
